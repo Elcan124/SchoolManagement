@@ -1,0 +1,38 @@
+Person logged in with name: Elcan Mahmudov Time: 2023-09-07T19:50:15.528480600
+Person logged in with name: Elcan Mahmudov Time: 2023-09-07T19:51:47.023236100
+Person logged in with name: Student Mahmudov Time: 2023-09-07T19:52:04.815615800
+Person logged in with name: Elcan Mahmudov Time: 2023-09-07T19:57:29.481941300
+Person logged in with name: Elcan Mahmudov Time: 2023-09-07T20:00:57.479919400
+User deleted with this id:2 asfasfasf asfasfasfTime: 2023-09-07T20:01:23.737742900
+Person logged in with name: Elcan Mahmudov Time: 2023-09-07T20:02:35.542658
+User deleted with this id:2 asfasfasf asfasfasfTime: 2023-09-07T20:03:03.190091100
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T14:25:08.050647100
+New Student added with this id: 4  Username:testest2265
+New Student added with this id: 5  Username:sagasga9981
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T14:34:26.397409800
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T14:36:57.161413500
+New Student added with this id: 4  Username:testest3658 Time: 2023-09-09T14:37:20.138945800
+Student with id: 4  has been blocked!! Time:2023-09-09T14:37:38.049132500 By admin:admin
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T14:41:35.993023600
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T14:42:15.704943100
+New Student added with this id: 4  Username:asfsafa2309 Time: 2023-09-09T14:42:26.720260400
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T14:42:39.941745600
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T14:51:32.868100200
+Student with id: 4  has been blocked!! Time:2023-09-09T14:51:45.325907200 By admin:admin
+Person logged in with name: Teacher Test Time: 2023-09-09T15:46:40.762591200
+Student:asfasfasfasadded to new class 11A Time: 2023-09-09T15:47:04.092629100
+Person logged in with name: Teacher Test Time: 2023-09-09T15:51:39.783505300
+Student:asfasfasfasadded to new class 11A Time: 2023-09-09T15:51:48.181063
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T16:52:22.160504100
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T16:53:04.790318600
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T16:53:18.762818900
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T16:59:58.449378500
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T17:11:10.300314800
+New Teacher added with this id: 2  Username:TeaTest3078 Time: 2023-09-09T17:11:54.656463200
+Person logged in with name: Teacher Tests Time: 2023-09-09T17:12:13.613023400
+Person logged in with name: Elcan Mahmudov Time: 2023-09-09T17:12:36.106320600
+New Student added with this id: 3  Username:stustuc6907 Time: 2023-09-09T17:12:57.095907600
+Person logged in with name: Teacher Tests Time: 2023-09-09T17:13:21.200390
+Student:studentadded to new class 11A Time: 2023-09-09T17:13:34.954599400
+Person logged in with name: Elcan Mahmudov Time: 2023-09-11T19:48:07.524765400
+Person logged in with name: Elcan Mahmudov Time: 2023-09-12T14:43:02.188194700
