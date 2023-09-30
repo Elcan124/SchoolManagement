@@ -4,6 +4,7 @@ import classes.Classes;
 import dinamicArrays.ClassesDynamicArray;
 import dinamicArrays.PersonDinamicArray;
 import globalDatas.GlobalData;
+import users.Person;
 
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
@@ -12,6 +13,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 
 public class FileUtils {
 
@@ -31,11 +33,11 @@ public class FileUtils {
 
     }
 
-    public static PersonDinamicArray readAll(String fileName) {
+    public static ArrayList<Person> readAll(String fileName) {
         try (FileInputStream fileInputStream = new FileInputStream(fileName);
              ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
         ) {
-            PersonDinamicArray personDinamicArray = (PersonDinamicArray) objectInputStream.readObject();
+            ArrayList<Person> personDinamicArray = (ArrayList<Person>) objectInputStream.readObject();
 
             return personDinamicArray;
 
@@ -81,11 +83,11 @@ public class FileUtils {
 
     }
 
-    public static ClassesDynamicArray readClassesDynamicArray(String fileName) {
+    public static ArrayList<Classes> readClassesDynamicArray(String fileName) {
         try (FileInputStream fileInputStream = new FileInputStream(fileName);
              ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
         ) {
-            ClassesDynamicArray classesDynamicArray = (ClassesDynamicArray) objectInputStream.readObject();
+            ArrayList<Classes> classesDynamicArray = (ArrayList<Classes>) objectInputStream.readObject();
 
             return classesDynamicArray;
 

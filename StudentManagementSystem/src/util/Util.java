@@ -37,7 +37,7 @@ public class Util {
 
     public static boolean printUsersExceptAdmin() {//methoid geriye boolean qaytarsinki o biri terefde yoxclaya bilim
         boolean isFounded = false;
-        for (int i = 0; i < GlobalData.personDinamicArray.getSize(); i++) {
+        for (int i = 0; i < GlobalData.personDinamicArray.size(); i++) {
             Person person = GlobalData.personDinamicArray.get(i);//dinamic arrayden cekdiyim useri perosna menimsedirem ki birde her deye GlobalData.personsdinamicarray.get(i) demeyek kodu qısaldaq
             if (person instanceof Student) {//eger person Student tipindedirse o zaman çap elesin bunun üçün studentde method yazaq
                 Student student = (Student) person;
@@ -58,7 +58,7 @@ public class Util {
 
     public static boolean printUnBlockedUsersExceptAdmin() {//methoid geriye boolean qaytarsinki o biri terefde yoxclaya bilim
         boolean isFounded = false;
-        for (int i = 0; i < GlobalData.personDinamicArray.getSize(); i++) {
+        for (int i = 0; i < GlobalData.personDinamicArray.size(); i++) {
             Person person = GlobalData.personDinamicArray.get(i);//dinamic arrayden cekdiyim useri perosna menimsedirem ki birde her deye GlobalData.personsdinamicarray.get(i) demeyek kodu qısaldaq
             if (person instanceof Student) {
 
@@ -85,7 +85,7 @@ public class Util {
 
     public static boolean printBlockedUsersExceptAdmin() {//methoid geriye boolean qaytarsinki o biri terefde yoxclaya bilim
         boolean isFounded = false;
-        for (int i = 0; i < GlobalData.personDinamicArray.getSize(); i++) {
+        for (int i = 0; i < GlobalData.personDinamicArray.size(); i++) {
             Person person = GlobalData.personDinamicArray.get(i);//dinamic arrayden cekdiyim useri perosna menimsedirem ki birde her deye GlobalData.personsdinamicarray.get(i) demeyek kodu qısaldaq
             if (person instanceof Student) {
 
@@ -112,7 +112,7 @@ public class Util {
 
     public static boolean printStudents() {
         boolean isFounded = false;
-        for (int i = 0; i < GlobalData.personDinamicArray.getSize(); i++) {
+        for (int i = 0; i < GlobalData.personDinamicArray.size(); i++) {
             Person person = GlobalData.personDinamicArray.get(i);
             if (person instanceof Student) {
                 Student student = (Student) person;
@@ -124,7 +124,7 @@ public class Util {
     }
 
     public static void printClasses() {
-        for (int i = 0; i < GlobalData.classesDynamicArray.getSize(); i++) {
+        for (int i = 0; i < GlobalData.classesDynamicArray.size(); i++) {
             System.out.println(GlobalData.classesDynamicArray.get(i).getName());
         }
     }

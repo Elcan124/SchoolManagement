@@ -36,3 +36,8 @@ Person logged in with name: Teacher Tests Time: 2023-09-09T17:13:21.200390
 Student:studentadded to new class 11A Time: 2023-09-09T17:13:34.954599400
 Person logged in with name: Elcan Mahmudov Time: 2023-09-11T19:48:07.524765400
 Person logged in with name: Elcan Mahmudov Time: 2023-09-12T14:43:02.188194700
+Person logged in with name: Admin Mahmudov Time: 2023-09-30T17:54:33.824802100
+Person logged in with name: Admin Mahmudov Time: 2023-09-30T17:56:16.602896500
+Person logged in with name: Admin Mahmudov Time: 2023-09-30T17:57:03.715201900
+Person logged in with name: Admin Mahmudov Time: 2023-09-30T17:57:30.920728700
+New Student added with this id: 1  Username:asfasfa72 Time: 2023-09-30T17:57:46.606914

@@ -22,8 +22,9 @@ import java.util.InputMismatchException;
 public class Main {//bura kimi her sey əla diger serviceleri yazmaga çalışın video çox uzun oldu dersde qalanlarina baxariq bura kimi her sey okeydirse yeni seyleri rahatliqla elave ede bileceyik excpetionlari dersde elave ederik ve diger serciveleri bitirerik esas odu bura kimi baxib mentiqi tutdunsa fso sen hamisini yaza bilersen artiq )      helelik...
 
     public static void main(String[] args) {
+        System.out.println(GlobalData.classesDynamicArray.toString());
 
-        ArrayList<String> arrayList = new ArrayList<String>(10000);
+
 
 
 
@@ -33,7 +34,7 @@ public class Main {//bura kimi her sey əla diger serviceleri yazmaga çalışı
         LoginServiceInter loginService = new LoginServiceImpl();
 
         ManagementServiceInter managementService = new Management();
-        for(int i = 0  ; i< GlobalData.personDinamicArray.getSize();i++){
+        for(int i = 0  ; i< GlobalData.personDinamicArray.size();i++){
             System.out.println(GlobalData.personDinamicArray.get(i));
         }
         while (true) {//sonsuz while dongusu icerisine saldim

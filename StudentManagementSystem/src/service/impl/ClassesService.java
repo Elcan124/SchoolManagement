@@ -24,7 +24,7 @@ public class ClassesService implements ClassesServiceInter {
         Util.printClasses();
         String selectedClassName = Util.requireString("Please enter class name to add Student");
         Classes selectedClasses = null;
-        for (int i = 0; i < GlobalData.classesDynamicArray.getSize(); i++) {
+        for (int i = 0; i < GlobalData.classesDynamicArray.size(); i++) {
             Classes classes = GlobalData.classesDynamicArray.get(i);
             if (classes.getName().equalsIgnoreCase(selectedClassName)) {
                 selectedClasses = classes;
@@ -41,7 +41,7 @@ public class ClassesService implements ClassesServiceInter {
     private Student getStudentById(int id) {
         Student student = null;
 
-        for (int i = 0; i < GlobalData.personDinamicArray.getSize(); i++) {
+        for (int i = 0; i < GlobalData.personDinamicArray.size(); i++) {
             Person person = GlobalData.personDinamicArray.get(i);
             if (person instanceof Student) {
                 Student selectedStudent = (Student) person;

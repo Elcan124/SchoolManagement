@@ -8,13 +8,12 @@ import users.Student;
 import users.Teacher;
 import util.Util;
 
-import java.nio.file.attribute.UserPrincipalNotFoundException;
 
 public class LoginServiceImpl implements LoginServiceInter { // login methodunu düzeldek bizden username istesin bele bir username  varsa daha sonra password istesin
     @Override
     public Person login(String username) {
         boolean isFounded = false;//boolean olaraq yaratdim eger tapilmadisa falsedi tapilsa true edecem
-        for (int i = 0; i < GlobalData.personDinamicArray.getSize(); i++) {
+        for (int i = 0; i < GlobalData.personDinamicArray.size(); i++) {
             Person person = GlobalData.personDinamicArray.get(i);//dincamic arrayden bir bir Personları çekirem daha sonra username ile yoxlayacam
             if (person instanceof Admin) {
                 Admin admin = (Admin) person;//eger çekdiyim person admindirse usernamesine gore yoxlayaq

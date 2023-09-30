@@ -75,13 +75,13 @@ try {
     @Override
     public void deleteUserById(int id) {//bir deyisen yaradaq hetta boolean yaradaq
 
-        for (int i = 0; i < GlobalData.personDinamicArray.getSize(); i++) {//yene cast etmeliyik çünki Studention yada teacherin icindeki idni gormeyecem
+        for (int i = 0; i < GlobalData.personDinamicArray.size(); i++) {//yene cast etmeliyik çünki Studention yada teacherin icindeki idni gormeyecem
             Person person = GlobalData.personDinamicArray.get(i);
             if (person instanceof Student) {
                 Student student = (Student) person;
                 if (student.getId() == id) {//artiuq bu şerte girecekse men bilecem ki demeli tapib o zaman isfoundedi true edim
 
-                    GlobalData.personDinamicArray.delete(i);//egerki i-ninci yerde duran personun (studentin) id-si parametr kimi oturduyum idye beraberdirse o zaman delete etsin hemin i-ninci yerde duran elementi
+                    GlobalData.personDinamicArray.remove(i);//egerki i-ninci yerde duran personun (studentin) id-si parametr kimi oturduyum idye beraberdirse o zaman delete etsin hemin i-ninci yerde duran elementi
                     String log = "User deleted with this id:" + id + " " + person.getName() + " " + person.getSurname() + "Time: " + LocalDateTime.now();
 
                     FileUtils.writeLogToFile(GlobalStrings.LOG_FILE_NAME, log);
@@ -92,7 +92,7 @@ try {
             if (person instanceof Teacher) {
                 Teacher teacher = (Teacher) person;
                 if (teacher.getId() == id) {
-                    GlobalData.personDinamicArray.delete(i);
+                    GlobalData.personDinamicArray.remove(i);
                     System.out.println("Teacher with id: " + teacher.getId() + " has been deleted succesfully!");//burda da melumat üçün çap edek
                     return;
                 }
@@ -109,7 +109,7 @@ try {
 
     @Override
     public void blockUserById(int id) {
-        for (int i = 0; i < GlobalData.personDinamicArray.getSize(); i++) {
+        for (int i = 0; i < GlobalData.personDinamicArray.size(); i++) {
             Person person = GlobalData.personDinamicArray.get(i);
             if (person instanceof Student) {
                 Student student = (Student) person;
@@ -141,7 +141,7 @@ try {
     @Override
     public void openBlockById(int id) {
 
-        for (int i = 0; i < GlobalData.personDinamicArray.getSize(); i++) {
+        for (int i = 0; i < GlobalData.personDinamicArray.size(); i++) {
             Person person = GlobalData.personDinamicArray.get(i);
             if (person instanceof Student) {
                 Student student = (Student) person;
@@ -171,7 +171,7 @@ try {
 
     @Override
     public void searchUserByName(String name) {
-        for (int i = 0; i < GlobalData.personDinamicArray.getSize(); i++) {
+        for (int i = 0; i < GlobalData.personDinamicArray.size(); i++) {
             Person person = GlobalData.personDinamicArray.get(i);
             String lowerName = name.toLowerCase();
             String personName = person.getName().toLowerCase();
@@ -231,7 +231,7 @@ try {
     private Classes getClasses(){
         Util.printClasses();
         String className = Util.requireString("Please insert classname which you want to add Teacher");
-        for(int i = 0 ; i<GlobalData.classesDynamicArray.getSize();i++){
+        for(int i = 0 ; i<GlobalData.classesDynamicArray.size();i++){
             Classes classes = GlobalData.classesDynamicArray.get(i);
             if(classes.getName().equalsIgnoreCase(className)){
                 return classes;

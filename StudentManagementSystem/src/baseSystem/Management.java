@@ -109,7 +109,7 @@ public class Management implements ManagementServiceInter {
         }
 
 
-        for (int i = 0; i < GlobalData.personDinamicArray.getSize(); i++) {
+        for (int i = 0; i < GlobalData.personDinamicArray.size(); i++) {
             System.out.println(GlobalData.personDinamicArray.get(i).getName() + " " + GlobalData.personDinamicArray.get(i).getBirthDate());
         }//burada çap edecem gorum düzgün elave edibdirmi
         return true;
