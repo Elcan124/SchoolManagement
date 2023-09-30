@@ -1,0 +1,2 @@
+# SchoolManagement
+School Managament project 
